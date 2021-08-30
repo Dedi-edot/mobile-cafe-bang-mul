@@ -1,8 +1,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Home from '../screens/Home';
 import Juice from '../screens/Juice';
@@ -10,51 +9,19 @@ import Kopi from '../screens/Kopi';
 import Snack from '../screens/Snack';
 import Teh from '../screens/Teh';
 
-const styles = StyleSheet.create({
-  tabLabel: {
-    fontSize: 15,
-  },
-});
-
-const BottomTab = createBottomTabNavigator();
+const BottomTab = createMaterialBottomTabNavigator();
 
 const MainNavigator = () => {
   return (
     <NavigationContainer>
-      <BottomTab.Navigator
-        barStyle={{backgroundColor: '#000'}}
-        screenOptions={({route}) => {
-          return {
-            tabBarIcon: ({focused}) => {
-              let iconName;
-              let color = focused ? 'blue' : 'black';
-              if (route.name === 'Home') {
-                iconName = 'home';
-              } else if (route.name === 'Juice') {
-                iconName = 'beer';
-              } else if (route.name === 'Kopi') {
-                iconName = 'cafe';
-              } else if (route.name === 'Teh') {
-                iconName = 'leaf';
-              } else if (route.name === 'Snack') {
-                iconName = 'pizza';
-              }
-              return <Ionicons name={iconName} size={20} color={color} />;
-            },
-          };
-        }}
-        tabBarOptions={{
-          activeTintColor: 'blue',
-        }}>
+      <BottomTab.Navigator barStyle={{backgroundColor: '#3a0ca3'}}>
         <BottomTab.Screen
           name="Home"
           component={Home}
           options={{
-            headerShown: false,
-            tabBarLabel: () => (
-              <View>
-                <Text style={styles.tabLabel}>All</Text>
-              </View>
+            tabBarLabel: 'All',
+            tabBarIcon: ({color}) => (
+              <Ionicons name="home" color={color} size={26} />
             ),
           }}
         />
@@ -62,11 +29,9 @@ const MainNavigator = () => {
           name="Juice"
           component={Juice}
           options={{
-            headerShown: false,
-            tabBarLabel: () => (
-              <View>
-                <Text style={styles.tabLabel}>Juice</Text>
-              </View>
+            tabBarLabel: 'Juice',
+            tabBarIcon: ({color}) => (
+              <Ionicons name="beer" color={color} size={26} />
             ),
           }}
         />
@@ -74,11 +39,9 @@ const MainNavigator = () => {
           name="Kopi"
           component={Kopi}
           options={{
-            headerShown: false,
-            tabBarLabel: () => (
-              <View>
-                <Text style={styles.tabLabel}>Kopi</Text>
-              </View>
+            tabBarLabel: 'Kopi',
+            tabBarIcon: ({color}) => (
+              <Ionicons name="cafe" color={color} size={26} />
             ),
           }}
         />
@@ -86,11 +49,9 @@ const MainNavigator = () => {
           name="Teh"
           component={Teh}
           options={{
-            headerShown: false,
-            tabBarLabel: () => (
-              <View>
-                <Text style={styles.tabLabel}>Teh</Text>
-              </View>
+            tabBarLabel: 'Teh',
+            tabBarIcon: ({color}) => (
+              <Ionicons name="leaf" color={color} size={26} />
             ),
           }}
         />
@@ -98,11 +59,9 @@ const MainNavigator = () => {
           name="Snack"
           component={Snack}
           options={{
-            headerShown: false,
-            tabBarLabel: () => (
-              <View>
-                <Text style={styles.tabLabel}>Snack</Text>
-              </View>
+            tabBarLabel: 'Snack',
+            tabBarIcon: ({color}) => (
+              <Ionicons name="pizza" color={color} size={26} />
             ),
           }}
         />
