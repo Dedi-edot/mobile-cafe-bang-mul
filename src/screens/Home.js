@@ -34,48 +34,37 @@ const Home = () => {
           type: 'FETCH_DATA',
           payload: res.data,
         });
-        console.log(res.data.length);
+        // console.log(res.data);
       })
       .catch(() => {
-        console.log('Fetch error');
+        console.log('error');
       });
+  };
+
+  const renderProduct = () => {
+    const dataProduct = product.product;
+    return dataProduct.map((val, idx) => {
+      return (
+        <Card
+          key={idx}
+          img={val.image}
+          title={val.name}
+          price={val.price}
+          desc={val.description}
+        />
+      );
+    });
   };
 
   useEffect(() => {
     fetchData();
-    console.log(product.product[0]);
+    console.log(product);
   }, []);
 
   return (
     <ScrollView>
       <Header />
-      <View>{/* <Text>{product[0].id}</Text> */}</View>
-      <View style={styles.container}>
-        <Card
-          img={product.product[0].image}
-          title={product.product[0].name}
-          price={product.product[0].price}
-          desc={product.product[0].description}
-        />
-        <Card
-          img={product.product[1].image}
-          title={product.product[1].name}
-          price={product.product[1].price}
-          desc={product.product[1].description}
-        />
-        <Card
-          img={product.product[2].image}
-          title={product.product[2].name}
-          price={product.product[2].price}
-          desc={product.product[2].description}
-        />
-        <Card
-          img={product.product[3].image}
-          title={product.product[3].name}
-          price={product.product[3].price}
-          desc={product.product[3].description}
-        />
-      </View>
+      <View style={styles.container}>{renderProduct()}</View>
     </ScrollView>
   );
 };
