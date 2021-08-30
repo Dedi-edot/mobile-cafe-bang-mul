@@ -1,82 +1,84 @@
-[
+{
+  "product": [
     {
-        "id": 1,
-        "name": "Es Teh",
-        "price": 50000,
-        "category": "tea",
-        "description": "Teh dingin bikin merinding",
-        "image": "https://img.qraved.co/v2/image/data/2016/11/03/icedtea_02_small-x.jpg"
+      "id": 1,
+      "name": "Es Teh",
+      "price": 50000,
+      "category": "tea",
+      "description": "Teh dingin bikin merinding",
+      "image": "https://img.qraved.co/v2/image/data/2016/11/03/icedtea_02_small-x.jpg"
     },
     {
-        "id": 2,
-        "name": "Latte",
-        "price": 35000,
-        "category": "coffee",
-        "description": "Kopi nikmat gak bikin kembung",
-        "image": "https://asset.kompas.com/crops/XfUIxfmiL4vgceeH9iyaBxLcOos=/0x0:0x0/750x500/data/photo/2015/09/24/1054237ThinkstockPhotos-482504936780x390.jpg"
+      "id": 2,
+      "name": "Latte",
+      "price": 35000,
+      "category": "coffee",
+      "description": "Kopi nikmat gak bikin kembung",
+      "image": "https://asset.kompas.com/crops/XfUIxfmiL4vgceeH9iyaBxLcOos=/0x0:0x0/750x500/data/photo/2015/09/24/1054237ThinkstockPhotos-482504936780x390.jpg"
     },
     {
-        "id": 3,
-        "name": "Americano",
-        "price": 70000,
-        "category": "coffee",
-        "description": "Kopi Hitam Legam",
-        "image": "https://imgx.parapuan.co/crop/0x0:0x0/x/photo/2021/06/10/cold-americano-glass-white-cloth-20210610031413.jpg"
+      "id": 3,
+      "name": "Americano",
+      "price": 70000,
+      "category": "coffee",
+      "description": "Kopi Hitam Legam",
+      "image": "https://imgx.parapuan.co/crop/0x0:0x0/x/photo/2021/06/10/cold-americano-glass-white-cloth-20210610031413.jpg"
     },
     {
-        "id": 4,
-        "name": "V60",
-        "price": 45000,
-        "category": "coffee",
-        "description": "Kopi Cair Pahit",
-        "image": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1524191119/Kian_Populer_Ini_Keistimewaan_Alat_Seduh_Hario_V60_nh1z7k.jpg"
+      "id": 4,
+      "name": "V60",
+      "price": 45000,
+      "category": "coffee",
+      "description": "Kopi Cair Pahit",
+      "image": "https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_640/v1524191119/Kian_Populer_Ini_Keistimewaan_Alat_Seduh_Hario_V60_nh1z7k.jpg"
     },
     {
-        "id": 5,
-        "name": "Kopi Tubruk",
-        "price": 6000,
-        "category": "coffee",
-        "description": "Kopi Ampas",
-        "image": "https://majalah.ottencoffee.co.id/wp-content/uploads/2019/03/coffee-tubruk.jpg"
+      "id": 5,
+      "name": "Kopi Tubruk",
+      "price": 6000,
+      "category": "coffee",
+      "description": "Kopi Ampas",
+      "image": "https://majalah.ottencoffee.co.id/wp-content/uploads/2019/03/coffee-tubruk.jpg"
     },
     {
-        "id": 6,
-        "name": "Jus Jeruk",
-        "price": 6000,
-        "category": "juice",
-        "description": "Jeruk dingin nikmat",
-        "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
+      "id": 6,
+      "name": "Jus Jeruk",
+      "price": 6000,
+      "category": "juice",
+      "description": "Jeruk dingin nikmat",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
     },
     {
-        "id": 7,
-        "name": "Jus Jeruk",
-        "price": 6000,
-        "category": "juice",
-        "description": "Jeruk dingin nikmat",
-        "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
+      "id": 7,
+      "name": "Jus Jeruk",
+      "price": 6000,
+      "category": "juice",
+      "description": "Jeruk dingin nikmat",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
     },
     {
-        "id": 8,
-        "name": "Jus Jeruk",
-        "price": 6000,
-        "category": "juice",
-        "description": "Jeruk dingin nikmat",
-        "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
+      "id": 8,
+      "name": "Jus Jeruk",
+      "price": 6000,
+      "category": "juice",
+      "description": "Jeruk dingin nikmat",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
     },
     {
-        "id": 9,
-        "name": "Jus Jeruk",
-        "price": 6000,
-        "category": "juice",
-        "description": "Jeruk dingin nikmat",
-        "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
+      "id": 9,
+      "name": "Jus Jeruk",
+      "price": 6000,
+      "category": "juice",
+      "description": "Jeruk dingin nikmat",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
     },
     {
-        "id": 10,
-        "name": "Jus Jeruk",
-        "price": 6000,
-        "category": "juice",
-        "description": "Jeruk dingin nikmat",
-        "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
+      "id": 10,
+      "name": "Jus Jeruk",
+      "price": 6000,
+      "category": "juice",
+      "description": "Jeruk dingin nikmat",
+      "image": "https://images.tokopedia.net/img/cache/500-square/VqbcmM/2020/5/22/67e9891a-7ed7-4b94-a20a-9ebeff1b1748.jpg.webp"
     }
-]
+  ]
+}
