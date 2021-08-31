@@ -4,7 +4,7 @@
 import React, {useState, useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import axios from 'axios';
-import {View, StyleSheet, ScrollView, Text} from 'react-native';
+import {View, StyleSheet, ScrollView} from 'react-native';
 import Header from '../components/Header';
 import Card from '../components/Card';
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Home = () => {
+const Home = props => {
   const dispatch = useDispatch();
   const product = useSelector(state => state.product);
 
@@ -34,7 +34,6 @@ const Home = () => {
           type: 'FETCH_DATA',
           payload: res.data,
         });
-        // console.log(res.data);
       })
       .catch(() => {
         console.log('error');
@@ -56,15 +55,21 @@ const Home = () => {
     });
   };
 
+  const moveCart = () => {
+    props.navigation.navigate('Cart');
+  };
+
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
-    <ScrollView>
-      <Header />
-      <View style={styles.container}>{renderProduct()}</View>
-    </ScrollView>
+    <View>
+      <Header cart={moveCart} />
+      <ScrollView>
+        <View style={styles.container}>{renderProduct()}</View>
+      </ScrollView>
+    </View>
   );
 };
 

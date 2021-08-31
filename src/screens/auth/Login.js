@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Login = () => {
+const Login = props => {
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
       <View style={styles.container}>
@@ -66,10 +66,13 @@ const Login = () => {
           <TextInput style={styles.input} />
           <Text style={styles.label}>Password</Text>
           <TextInput secureTextEntry style={styles.input} />
-          <TouchableOpacity style={styles.btn}>
+          <TouchableOpacity
+            style={styles.btn}
+            onPress={() => props.navigation.navigate('StackNavigator')}>
             <Text style={styles.txtbtn}>Sign In</Text>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('Register')}>
             <Text style={{alignSelf: 'center'}}>Register new account.</Text>
           </TouchableOpacity>
         </View>

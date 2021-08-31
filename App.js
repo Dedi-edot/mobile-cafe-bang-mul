@@ -3,16 +3,17 @@ import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import Thunk from 'redux-thunk';
 import rootReducer from './src/redux/reducer';
-// import Login from './src/screens/auth/Login';
-// import Register from './src/screens/auth/Register';
-import MainNavigator from './src/navigators/MainNavigator';
+import {NavigationContainer} from '@react-navigation/native';
+import AppNavigator from './src/navigators/AppNavigator';
 
 const store = createStore(rootReducer, applyMiddleware(Thunk));
 
 const App = () => {
   return (
     <Provider store={store}>
-      <MainNavigator />
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
     </Provider>
   );
 };
