@@ -58,7 +58,6 @@ const Home = () => {
 
   useEffect(() => {
     fetchData();
-    console.log(product);
   }, []);
 
   return (
